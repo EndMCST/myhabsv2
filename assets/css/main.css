@@ -1253,7 +1253,7 @@ section,
   transition: 0.5s;
 }
 
-.recent-posts .post-item .post-date {
+.recent-posts .post-item .agency-name {
   position: absolute;
   right: 0;
   bottom: 0;
@@ -1531,7 +1531,7 @@ section,
   color: color-mix(in srgb, var(--default-color), transparent 40%);
 }
 
-.blog-posts-2 .meta .post-date {
+.blog-posts-2 .meta .agency-name {
   background-color: var(--accent-color);
   color: var(--contrast-color);
   font-size: 13px;
@@ -1541,7 +1541,7 @@ section,
   border-radius: 4px;
 }
 
-.blog-posts-2 .meta .post-date span {
+.blog-posts-2 .meta .agency-name span {
   display: block;
   color: var(--contrast-color);
   font-weight: 700;
