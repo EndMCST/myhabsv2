@@ -27,6 +27,21 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+  /* Override logo img size */
+  a.logo img {
+    height: 80px !important;
+    width: auto !important;
+    max-height: none !important;
+  }
+
+  /* Optional: increase space around header */
+  #header.header {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -35,32 +50,16 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/myhabslogo.png" alt="MyHABs">
+        <img src="hab_assets/habslogo.svg" alt="MyHABs">
         <!-- <h1 class="sitename">MyHABs v2</h1>  -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="info.html">HAB Info</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown"><a href="#"><span>IoT Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="http://20.205.29.217:8080/dashboard/c23c8af0-b1fb-11ef-b5bd-c72a8dc1e0cb?publicId=be210690-5df9-11ef-b3e2-995a13188717">IHAB</a></li>
-              <li><a href="http://20.205.29.217:8080/dashboard/d400f380-e4f4-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB B</a></li>
-              <li><a href="http://20.205.29.217:8080/dashboard/f5deb0a0-e4f4-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB C</a></li>
-              <li><a href="http://20.205.29.217:8080/dashboard/0488cf50-e4f5-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB D</a></li>
-              <li class="dropdown"><a href="#"><span>Other Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="http://20.205.29.217:8080/dashboard/b179af20-9975-11ef-8b78-1f0995d36f0b?publicId=d3601990-86c3-11ef-beb0-6185ac614084">HL7 Kuala Kurau</a></li>
-                  <li><a href="http://20.205.29.217:8080/dashboard/0112d1d0-86c3-11ef-beb0-6185ac614084?publicId=d3601990-86c3-11ef-beb0-6185ac614084">HL7 Sungai Udang</a></li>
-                  <li><a href="http://20.205.29.217:8080/dashboard/5c4f52d0-5f8b-11ef-b3e2-995a13188717?publicId=be210690-5df9-11ef-b3e2-995a13188717">N-IHAB</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="about.html">Data FizioKimia</a></li>
+          <li><a href="features.html">Ramalan</a></li>
+          <li><a href="contact.html">Hubungi</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -71,13 +70,13 @@
   <main class="main">
 
     <!-- Page Title -->
-    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-title-bg.webp);">
+    <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-bg.webp);">
       <div class="container position-relative">
         <h1>Contact</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Contact</li>
+            <li><a href="index.html">Utama</a></li>
+            <li class="current">Hubungi Kami</li>
           </ol>
         </nav>
       </div>
@@ -87,9 +86,9 @@
     <section id="contact" class="contact section">
 
       <div class="mb-5">
-        <iframe 
+        <iframe
             style="width: 100%; height: 400px;" 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15934.417228442272!2d101.73304778916012!3d3.2528077999999966!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31ccea4c087a8e6b%3A0x1d76d7a930a855d7!2sKulliyyah%20of%20Information%20and%20Communication%20Technology%20(KICT)!5e0!3m2!1sen!2smy!4v1710132334567" 
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3972.8505067506344!2d100.28391857383225!3d5.2860107946921975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x304abfbe158eeef1%3A0x259a4ce5c72b702d!2sFisheries%20Research%20Institute%20(FRI)%2C%20Batu%20Maung!5e0!3m2!1sen!2smy!4v1753093799718!5m2!1sen!2smy"
             frameborder="0" 
             allowfullscreen="">
         </iframe>
@@ -103,16 +102,15 @@
           <div class="col-lg-4">
 
             <div class="info">
-              <h3>Get in touch</h3>
+              <h3>Hubungi Kami</h3>
 
               <div class="info-item d-flex">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
-                  <h4>Location:</h4>
-                  <p>Centre of Excellence for Cyber Security,
-                    Kulliyyah of Information and Communication Technology,  
-                    International Islamic University Malaysia,
-                    53100 Kuala Lumpur.</p>
+                  <h4>Lokasi:</h4>
+                  <p>Institut Penyelesaian Perikanan,,
+                    Jalan Batu Maung, 11960 Bayan Lepas,  
+                    Pulau Pinang, Malaysia.</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -120,7 +118,7 @@
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h4>Email:</h4>
-                  <p>myhabs@iium.my</p>
+                  <p>myhabs@fri.dof.my</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -128,7 +126,7 @@
                 <i class="bi bi-phone flex-shrink-0"></i>
                 <div>
                   <h4>Call:</h4>
-                  <p>+6 0123 45678 90</p>
+                  <p>+6 04-626 3926</p>
                 </div>
               </div><!-- End Info Item -->
 
@@ -140,24 +138,24 @@
             <form action="forms/contact.php" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required="">
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required="">
                 </div>
                 <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required="">
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
                 </div>
               </div>
               <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required="">
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Tajuk" required="">
               </div>
               <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Message" required=""></textarea>
+                <textarea class="form-control" name="message" placeholder="Mesej" required=""></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <div class="loading">Memuat..</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Your message has been sent. Thank you!</div>
+                <div class="sent-message">Mesej anda telah dihantar. Terima kasih!</div>
               </div>
-              <div class="text-center"><button type="submit">Send Message</button></div>
+              <div class="text-center"><button type="submit">Hantar</button></div>
             </form>
           </div><!-- End Contact Form -->
 
@@ -179,53 +177,42 @@
               <span class="sitename">MyHABs</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>Centre of Excellence for Cyber Security,</p>
-              <p>Kulliyyah of Information and Communication Technology,</p>
-              <p>International Islamic University Malaysia,</p>
-              <p>53100 Kuala Lumpur, Malaysia</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+6 0123 45678 90</span></p>
-              <p><strong>Email:</strong> <span>myhabs@iium.my</span></p>
+              <p>Institut Penyelesaian Perikanan,</p>
+              <p>Jalan Batu Maung, 11960 Bayan Lepas,</p>
+              <p>Pulau Pinang, Malaysia</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+6 04-626 3926</span></p>
+              <p><strong>Email:</strong> <span>myhabs@fri.dof.my</span></p>
+              <p><strong>Website:</strong> <span>https://fri.dof.gov.my</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Info</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Utama</a></li>
+              <li><a href="#">Data FizioKimia</a></li>
+              <li><a href="#">Ramalan</a></li>
+              <li><a href="#">Hubungi</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Real Time IoT Dashboard</h4>
+            <h4>IoT Dashboard & Ramalan</h4>
             <ul>
-              <li><a href="#">IHAB</a></li>
-              <li><a href="#">IHAB B</a></li>
-              <li><a href="#">IHAB C</a></li>
-              <li><a href="#">IHAB D</a></li>
-              <li><a href="#">N-IHAB</a></li>
+              <li><a href="http://20.205.29.217:8080/dashboard/b179af20-9975-11ef-8b78-1f0995d36f0b?publicId=d3601990-86c3-11ef-beb0-6185ac614084">Kuala Kurau, Perak</a></li>
+              <li><a href="http://20.205.29.217:8080/dashboard/0112d1d0-86c3-11ef-beb0-6185ac614084?publicId=d3601990-86c3-11ef-beb0-6185ac614084">Sungai Udang, Pulau Pinang</a></li>
+              <li><a href="http://20.17.160.46:8080/dashboard/ca3bc5d0-3758-11f0-86b5-e3aaf2c891b0?publicId=a3784ad0-3579-11f0-86b5-e3aaf2c891b0">Sungai Geting, Kelantan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>HL7 Dashboard</h4>
+            <h4>Agensi Berkait</h4>
             <ul>
-              <li><a href="#">Kuala Kurau</a></li>
-              <li><a href="#">Sungai Udangs</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Related Work</h4>
-            <ul>
-              <li><a href="#">MyHABs V1</a></li>
-              <li><a href="#">International Islamic University Malaysia</a></li>
-              <li><a href="#">Department Fisheries</a></li>
-              <li><a href="#">Fisheries Research Institute</a></li>
-              <li><a href="#">Silverseeds Lab Network</a></li>
+              <li><a href="http://myhabs.dof.iolayerz.com/">MyHABs V1</a></li>
+              <li><a href="https://www.iium.edu.my/">International Islamic University Malaysia</a></li>
+              <li><a href="https://fri.dof.gov.my/">Department of Fisheries</a></li>
+              <li><a href="https://www.dof.gov.my/en/">Fisheries Research Institute</a></li>
+              <li><a href="https://silverseedslab.com/">Silverseeds Lab Network</a></li>
             </ul>
           </div>
 
@@ -255,7 +242,7 @@
       </div>
     </div>
 
-  </footer><!-- /Footer -->
+  </footer>
 
   <!-- Scroll Top -->
   <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>

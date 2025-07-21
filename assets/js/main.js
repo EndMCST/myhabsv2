@@ -1,11 +1,3 @@
-/**
-* Template Name: AgriCulture
-* Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
 (function() {
   "use strict";
 
@@ -162,6 +154,19 @@
    */
   const glightbox = GLightbox({
     selector: '.glightbox'
+  });
+
+    /**
+   * Highlight active navbar link based on current URL
+   */
+  const currentPage = window.location.pathname.split("/").pop(); // e.g. "about.html"
+  document.querySelectorAll('#navmenu a').forEach(link => {
+    const linkHref = link.getAttribute("href");
+    if (linkHref === currentPage || (linkHref === "index.html" && currentPage === "")) {
+      link.classList.add("active");
+    } else {
+      link.classList.remove("active");
+    }
   });
 
 })();

@@ -1,15 +1,3 @@
-/**
-* Template Name: AgriCulture
-* Template URL: https://bootstrapmade.com/agriculture-bootstrap-website-template/
-* Updated: Aug 07 2024 with Bootstrap v5.3.3
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
-
-/*--------------------------------------------------------------
-# Font & Color Variables
-# Help: https://bootstrapmade.com/color-system/
---------------------------------------------------------------*/
 /* Fonts */
 :root {
   --default-font: "Open Sans",  system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -743,6 +731,19 @@ h6 {
   padding-right: 10px;
   color: color-mix(in srgb, var(--default-color), transparent 50%);
 }
+
+/* Breadcrumbs default link: guna warna biasa */
+.page-title .breadcrumbs ol li a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* Breadcrumbs current page: hijau & bold */
+.page-title .breadcrumbs ol li.current {
+  color: #2ea359;
+  font-weight: 600;
+}
+
 
 /*--------------------------------------------------------------
 # Global Sections
@@ -2011,6 +2012,65 @@ section,
 .contact .php-email-form button[type=submit]:hover {
   background: color-mix(in srgb, var(--accent-color) 90%, black 15%);
 }
+
+/*--------------------------------------------------------------
+# Mekap Dashboard
+--------------------------------------------------------------*/
+
+.features-gallery .card-title {
+  margin-top: 15px;
+  font-size: 18px;
+  color: #2d465e;
+  font-weight: 600;
+}
+
+.features-gallery .btn-success {
+  background-color: #2ea359;
+  border-color: #2ea359;
+  transition: all 0.3s ease-in-out;
+}
+
+.features-gallery .btn-success:hover {
+  background-color: #116530;
+  border-color: #116530;
+}
+
+/*--------------------------------------------------------------
+# Kalau page tak siap lagi
+--------------------------------------------------------------*/
+
+.under-construction {
+  background: #f4f8f5;
+  color: #2d465e;
+  min-height: 60vh;
+}
+
+.under-construction h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #2ea359;
+}
+
+.under-construction p {
+  font-size: 16px;
+  color: #495057;
+}
+
+.under-construction .btn-outline-success {
+  border-color: #2ea359;
+  color: #2ea359;
+}
+
+.under-construction .btn-outline-success:hover {
+  background-color: #2ea359;
+  color: #fff;
+}
+
+.under-construction .uc-img {
+  max-width: 800px;
+  width: 100%;
+}
+
 
 /*--------------------------------------------------------------
 # Widgets

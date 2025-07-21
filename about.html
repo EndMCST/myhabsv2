@@ -27,6 +27,21 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+  /* Override logo img size */
+  a.logo img {
+    height: 80px !important;
+    width: auto !important;
+    max-height: none !important;
+  }
+
+  /* Optional: increase space around header */
+  #header.header {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -35,32 +50,16 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/myhabslogo.png" alt="MyHABs">
+        <img src="hab_assets/habs_logo3.png" alt="MyHABs">
         <!-- <h1 class="sitename">MyHABs v2</h1>  -->
       </a>
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="info.html">HAB Info</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown"><a href="#"><span>IoT Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-            <ul>
-              <li><a href="http://20.205.29.217:8080/dashboard/c23c8af0-b1fb-11ef-b5bd-c72a8dc1e0cb?publicId=be210690-5df9-11ef-b3e2-995a13188717">IHAB</a></li>
-              <li><a href="http://20.205.29.217:8080/dashboard/d400f380-e4f4-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB B</a></li>
-              <li><a href="http://20.205.29.217:8080/dashboard/f5deb0a0-e4f4-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB C</a></li>
-              <li><a href="http://20.205.29.217:8080/dashboard/0488cf50-e4f5-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB D</a></li>
-              <li class="dropdown"><a href="#"><span>Other Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
-                <ul>
-                  <li><a href="http://20.205.29.217:8080/dashboard/b179af20-9975-11ef-8b78-1f0995d36f0b?publicId=d3601990-86c3-11ef-beb0-6185ac614084">HL7 Kuala Kurau</a></li>
-                  <li><a href="http://20.205.29.217:8080/dashboard/0112d1d0-86c3-11ef-beb0-6185ac614084?publicId=d3601990-86c3-11ef-beb0-6185ac614084">HL7 Sungai Udang</a></li>
-                  <li><a href="http://20.205.29.217:8080/dashboard/5c4f52d0-5f8b-11ef-b3e2-995a13188717?publicId=be210690-5df9-11ef-b3e2-995a13188717">N-IHAB</a></li>
-                </ul>
-              </li>
-            </ul>
-          </li>
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="about.html">Data FizioKimia</a></li>
+          <li><a href="features.html">Ramalan</a></li>
+          <li><a href="contact.html">Hubungi</a></li>
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -73,18 +72,18 @@
     <!-- Page Title -->
     <div class="page-title dark-background" data-aos="fade" style="background-image: url(assets/img/page-bg.webp);">
       <div class="container position-relative">
-        <h1>About MyHABs</h1>
+        <h1>Data FizioKimia MyHABs</h1>
         <nav class="breadcrumbs">
           <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">About</li>
+            <li><a href="index.html">Utama</a></li>
+            <li class="current">Data FizioKimia</li>
           </ol>
         </nav>
       </div>
     </div><!-- End Page Title -->
 
     <!-- About 3 Section -->
-    <section id="about-3" class="about-3 section">
+    <!-- section id="about-3" class="about-3 section">
 
       <div class="container">
         <div class="row gy-4 justify-content-between align-items-center">
@@ -119,13 +118,56 @@
           </div>
         </div>
       </div>
-    </section><!-- /About 3 Section -->
+    </section --><!-- /About 3 Section -->
+
+    <!-- Dashboard option -->
+    <section class="features-gallery py-5">
+      <div class="container">
+        <div class="row g-4">
+          
+          <!-- Kuala Kurau -->
+           <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm border-0">
+              <img src="hab_assets/location/kuala-kurau-1.jpg" class="card-img-top img-fluid" alt="Sensor Deployment">
+              <div class="card-body">
+                <h5 class="card-title">Kuala Kurau</h5>
+                <a href="http://20.205.29.217:8080/dashboard/b179af20-9975-11ef-8b78-1f0995d36f0b?publicId=d3601990-86c3-11ef-beb0-6185ac614084" class="btn btn-success">Lihat Dashboard</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sungai Udang -->
+           <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm border-0">
+              <img src="hab_assets/location/sungai-udang.jpg" class="card-img-top img-fluid" alt="Water Quality Monitoring">
+              <div class="card-body">
+                <h5 class="card-title">Sungai Udang</h5>
+                <a href="http://20.205.29.217:8080/dashboard/0112d1d0-86c3-11ef-beb0-6185ac614084?publicId=d3601990-86c3-11ef-beb0-6185ac614084" class="btn btn-success">Lihat Dashboard</a>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Sungai Geting -->
+           <div class="col-md-4">
+            <div class="card h-100 text-center shadow-sm border-0">
+              <img src="hab_assets/location/sungai-geting-1.jpg" class="card-img-top img-fluid" alt="HAB Prediction">
+              <div class="card-body">
+                <h5 class="card-title">Sungai Geting</h5>
+                <a href="http://20.17.160.46:8080/dashboard/ca3bc5d0-3758-11f0-86b5-e3aaf2c891b0?publicId=a3784ad0-3579-11f0-86b5-e3aaf2c891b0" class="btn btn-success">Lihat Dashboard</a>
+              </div>
+            </div>
+          </div>
+        
+        </div>
+      </div>
+    </section> <!-- /End Dashboard-->
+
 
     <!-- Team Section -->
     <section class="team-15 team section" id="team">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Meet the MyHABs Team</h2>
+        <h2>Kenali Pasukan MyHABs</h2>
       </div><!-- End Section Title -->
 
       <div class="content">
@@ -186,7 +228,7 @@
             <div class="col-lg-3 col-md-6 mb-4">
               <div class="person">
                 <figure>
-                  <img src="assets/img/team/pn-rozi-ph.png" alt="Image" class="img-fluid">
+                  <img src="assets/img/team/pn-rozi.png" alt="Image" class="img-fluid">
                   <div class="social">
                     <a href="#"><span class="bi bi-facebook"></span></a>
                     <a href="#"><span class="bi bi-twitter-x"></span></a>
@@ -194,7 +236,7 @@
                   </div>
                 </figure>
                 <div class="person-contents">
-                  <h3>Roziawati Mohd Razali</h3>
+                  <h3>Pn. Roziawati Mohd Razali</h3>
                   <span class="position">Fisheries Research Institute</span>
                 </div>
               </div>
@@ -213,9 +255,9 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
-              <h3>Got something to share?</h3>
+              <h3>Ingin Kongsikan Sesuatu?</h3>
               <p class="opacity-50">
-                Whether it's feedback, inquiries, or ideas, drop us a message!
+                Sama ada maklum balas, pertanyaan, atau idea, hantarkan mesej kepada kami!
               </p>
             </div>
             <div class="col-lg-6">
@@ -227,7 +269,7 @@
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">
-                  Your message has been sent. Thank you!
+                  Mesej anda telah dihantar. Terima Kasih!
                 </div>
               </form>
             </div>
@@ -249,53 +291,42 @@
               <span class="sitename">MyHABs</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>Centre of Excellence for Cyber Security,</p>
-              <p>Kulliyyah of Information and Communication Technology,</p>
-              <p>International Islamic University Malaysia,</p>
-              <p>53100 Kuala Lumpur, Malaysia</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+6 0123 45678 90</span></p>
-              <p><strong>Email:</strong> <span>myhabs@iium.my</span></p>
+              <p>Institut Penyelesaian Perikanan,</p>
+              <p>Jalan Batu Maung, 11960 Bayan Lepas,</p>
+              <p>Pulau Pinang, Malaysia</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+6 04-626 3926</span></p>
+              <p><strong>Email:</strong> <span>myhabs@fri.dof.my</span></p>
+              <p><strong>Website:</strong> <span>https://fri.dof.gov.my</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Info</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Utama</a></li>
+              <li><a href="#">Data FizioKimia</a></li>
+              <li><a href="#">Ramalan</a></li>
+              <li><a href="#">Hubungi</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Real Time IoT Dashboard</h4>
+            <h4>IoT Dashboard & Ramalan</h4>
             <ul>
-              <li><a href="#">IHAB</a></li>
-              <li><a href="#">IHAB B</a></li>
-              <li><a href="#">IHAB C</a></li>
-              <li><a href="#">IHAB D</a></li>
-              <li><a href="#">N-IHAB</a></li>
+              <li><a href="http://20.205.29.217:8080/dashboard/b179af20-9975-11ef-8b78-1f0995d36f0b?publicId=d3601990-86c3-11ef-beb0-6185ac614084">Kuala Kurau, Perak</a></li>
+              <li><a href="http://20.205.29.217:8080/dashboard/0112d1d0-86c3-11ef-beb0-6185ac614084?publicId=d3601990-86c3-11ef-beb0-6185ac614084">Sungai Udang, Pulau Pinang</a></li>
+              <li><a href="http://20.17.160.46:8080/dashboard/ca3bc5d0-3758-11f0-86b5-e3aaf2c891b0?publicId=a3784ad0-3579-11f0-86b5-e3aaf2c891b0">Sungai Geting, Kelantan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>HL7 Dashboard</h4>
+            <h4>Agensi Berkait</h4>
             <ul>
-              <li><a href="#">Kuala Kurau</a></li>
-              <li><a href="#">Sungai Udangs</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Related Work</h4>
-            <ul>
-              <li><a href="#">MyHABs V1</a></li>
-              <li><a href="#">International Islamic University Malaysia</a></li>
-              <li><a href="#">Department Fisheries</a></li>
-              <li><a href="#">Fisheries Research Institute</a></li>
-              <li><a href="#">Silverseeds Lab Network</a></li>
+              <li><a href="http://myhabs.dof.iolayerz.com/">MyHABs V1</a></li>
+              <li><a href="https://www.iium.edu.my/">International Islamic University Malaysia</a></li>
+              <li><a href="https://fri.dof.gov.my/">Department of Fisheries</a></li>
+              <li><a href="https://www.dof.gov.my/en/">Fisheries Research Institute</a></li>
+              <li><a href="https://silverseedslab.com/">Silverseeds Lab Network</a></li>
             </ul>
           </div>
 

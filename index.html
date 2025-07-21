@@ -27,6 +27,21 @@
   <!-- Main CSS File -->
   <link href="assets/css/main.css" rel="stylesheet">
 
+  <style>
+  /* Override logo img size */
+  a.logo img {
+    height: 80px !important;
+    width: auto !important;
+    max-height: none !important;
+  }
+
+  /* Optional: increase space around header */
+  #header.header {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
+  </style>
+
 </head>
 
 <body class="index-page">
@@ -35,18 +50,20 @@
     <div class="container-fluid container-xl position-relative d-flex align-items-center justify-content-between">
 
       <a href="index.html" class="logo d-flex align-items-center">
-        <img src="assets/img/myhabslogo.png" alt="MyHABs">
-        <!-- <h1 class="sitename">MyHABs v2</h1>  -->
+        <img src="hab_assets/habslogo.svg" alt="MyHABs">
       </a>
+
 
       <nav id="navmenu" class="navmenu">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="features.html">Features</a></li>
-          <li><a href="info.html">HAB Info</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li class="dropdown"><a href="#"><span>IoT Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
+          <li><a href="index.html">Utama</a></li>
+          <li><a href="about.html">Data FizioKimia</a></li>
+          <li><a href="features.html">Ramalan</a></li>
+          <li><a href="contact.html">Hubungi</a></li>
+
+          <!--li><a href="info.html">HAB Info</a></li -->
+          <!-- Dashboards -->
+          <!--li class="dropdown"><a href="#"><span>IoT Dashboard</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
             <ul>
               <li><a href="http://20.205.29.217:8080/dashboard/c23c8af0-b1fb-11ef-b5bd-c72a8dc1e0cb?publicId=be210690-5df9-11ef-b3e2-995a13188717">IHAB</a></li>
               <li><a href="http://20.205.29.217:8080/dashboard/d400f380-e4f4-11ef-b9ae-e796b861a5e6?publicId=f42fe370-e9bb-11ef-9982-81be460afb7f">IHAB B</a></li>
@@ -60,7 +77,7 @@
                 </ul>
               </li>
             </ul>
-          </li>
+          </li -->
         </ul>
         <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
       </nav>
@@ -76,42 +93,34 @@
       <div id="hero-carousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
 
         <div class="carousel-item active">
-          <img src="assets/img/hab_hero1.avif" alt="">
+          <img src="hab_assets/algae1.jpg" alt="">
           <div class="carousel-container">
-            <h2>Real-Time Harmful Algal Blooms (HABs) Monitoring</h2>
-            <p>Safeguarding Lives and Sustaining Livelihoods.</p>
-          </div>
-        </div><!-- End Carousel Item -->
-
-        <div class="carousel-item">
-          <img src="assets/img/hab_hero3.avif" alt="">
-          <div class="carousel-container">
-            <h2>Data-Driven Solutions for Water Safety</h2>
-            <p>Harnessing IoT and AI to detect, analyze, and mitigate HABs effectively.</p>
+            <h2>Pemonitoran Ledakan Alga-Bahaya Secara Terus</h2>
+            <p>Memanfaatkan IoT dan AI untuk mengesan, menganalisis, dan mengurangkan HAB dengan berkesan.</p>
           </div>
         </div><!-- End Carousel Item -->                      
 
         <div class="carousel-item">
-          <img src="assets/img/hab_hero5.avif" alt="">
+          <img src="hab_assets/algae2-1.jpg" alt="">
           <div class="carousel-container">
-            <h2>AI-Powered Algal Bloom Prediction</h2>
-            <p>Leveraging machine learning to forecast and mitigate HAB outbreaks.</p>
+            <h2>Spesis Alga Bahaya</h2>
+            <p>Memanfaatkan pembelajaran mesin untuk meramalkan dan mengurangkan kejadian HAB.</p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hab_hero6.avif" alt="">
+          <img src="hab_assets/algae3.jpg" alt="">
           <div class="carousel-container">
-            <h2>Safeguarding Aquaculture & Fisheries</h2>
-            <p>Protecting livelihoods with precise, real-time algal bloom detection.</p>
+            <h2>Persampelan dan Kutipan Data</h2>
+            <p>Melindungi sumber rezeki dengan pengesanan letusan alga yang tepat dan masa nyata.</p>
           </div>
         </div><!-- End Carousel Item -->
 
         <div class="carousel-item">
-          <img src="assets/img/hab_hero7.avif" alt="">
+          <img src="hab_assets/algae4.jpg" alt="">
           <div class="carousel-container">
-            <h2>Innovation for a Greener Future</h2>
-            <p>Advanced technology to combat environmental threats and preserve biodiversity.</p>
+            <h2>Analisis Data</h2>
+            <p>Teknologi canggih untuk menangani ancaman alam sekitar dan memelihara biodiversiti.</p>
           </div>
         </div><!-- End Carousel Item -->
 
@@ -135,68 +144,72 @@
       <div class="container">
         <div class="row gy-4 justify-content-between align-items-center">
           <div class="col-lg-6 order-lg-2 position-relative" data-aos="zoom-out">
-            <img src="assets/img/hab_hero2.avif" alt="Harmful Algal Blooms" class="img-fluid">
-            <a href="https://www.youtube.com/watch?v=706kZXlHZRw" class="glightbox pulsating-play-btn">
+            <img src="hab_assets/ikan_mati2.jpg" alt="Harmful Algal Blooms" class="img-fluid">
+            <a href="hab_assets/Alexandrium.mp4" class="glightbox pulsating-play-btn" data-gallery="video-gallery" data-type="video">
               <span class="play"><i class="bi bi-play-fill"></i></span>
            </a>
          </div>
           <div class="col-lg-5 order-lg-1" data-aos="fade-up" data-aos-delay="100">
-            <h2 class="content-title mb-4">Understanding Harmful Algal Blooms (HABs)</h2>
+            <h2 class="content-title mb-4">Apa itu HABs</h2>
+            <!-- <h2 class="content-subtitle text-black-50 opacity-110">Apa itu <strong>HABs</strong> ?</h2>> -->
             <p>
-             Harmful Algal Blooms (HABs) are rapid growths of algae that can produce toxins, deplete oxygen levels, and harm aquatic life. 
-             These blooms are often triggered by excess nutrients, rising temperatures, and environmental changes.
+             HABs merujuk kepada ‘Harmful Algal Blooms’ atau ledakan alga bahaya. 
+             Alga merupakan sejenis organisma akautik yang hidupnya bergantung kepada kehadiran cahaya matahari, 
+             nutrient serta parameter air lain seperti oksigen terlarut, suhu dan pH. 
+             Di Semenanjung Malaysia, kejadian ledakan alga bahaya telah direkod sejak tahun 1984 dan kejadian ini semakin meningkat saban tahun.
             </p>
+            <h2 class="content-title mb-4">Apa itu MyHABs</h2>
             <p class="mb-4">
-              HABs pose a significant threat to ecosystems, public health, and local economies. Monitoring and early detection 
-              are crucial in mitigating their effects.
-           </p>
-            <ul class="list-unstyled">
-              <li><i class="bi bi-exclamation-circle-fill text-warning me-2"></i>Threat to Marine Life</li>
-              <li><i class="bi bi-exclamation-circle-fill text-warning me-2"></i>Public Health Risk</li>
-              <li><i class="bi bi-exclamation-circle-fill text-warning me-2"></i>Economic Impact</li>
-            </ul>
-           <p>
-             Using IoT sensors and data analysis, we provide real-time monitoring and predictive insights 
-             to detect and mitigate HABs, ensuring healthier aquatic environments.
+              MyHABs ialah sebuah laman seswang yang mengadungi Sistem Amaran Awal atau Early Warning System (EWS) 
+              ledakan alga bahaya yang telah dibangunkan menggunakan pendekatan Kecerdikan Buatan. 
+              Ianya  telah dibangunkan oleh Jabatan Perikanan Malaysia dengan Kerjasama Universiti Islam Antarabangsa Malaysia 
+              dibawah Rancangan Malaysia ke 12 dengan peruntukan sebanyak RM1.7 juta.
            </p>
          </div>
         </div>
      </div>
-    </section><!-- /About 3 Section -->
+    </section>
+    <!-- /About 3 Section -->
 
-        <!-- About Section -->
+        <!-- IIUM Team Intro -->
         <section id="about" class="about section">
-
           <div class="content">
             <div class="container">
               <div class="row">
                 <div class="col-lg-6 mb-4 mb-lg-0">
-                  <img src="assets/img/team-all.jpeg" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
+                  <img src="hab_assets/ikan_mati1.jpg" alt="Image " class="img-fluid img-overlap" data-aos="zoom-out">
                 </div>
                 <div class="col-lg-5 ml-auto" data-aos="fade-up" data-aos-delay="100">
-                  <h2 class="content-title mb-4">Why Choose Us</h2>
+                  <h2 class="content-title mb-4">Fungsi MyHABs</h2>
                   <!-- <h2 class="content-subtitle text-white opacity-50">
                     More than <strong>50 year experience</strong> in agriculture
                     industry
                   </h2> -->
-                  <p class="opacity-50">
-                    At IIUM, we are dedicated to providing cutting-edge solutions for monitoring, predicting, and mitigating Harmful Algal Blooms (HABs). Our expertise, technology, and commitment to sustainability make us the ideal choice for safeguarding water quality and marine ecosystems..
+                  <p>
+                    MyHABs menpunyai 2 fungsi utama iaitu meramalkan kejadian ledakan alga bahaya dan membekalkan informasi berkenaan 
+                    dengan  ledakan alga bahaya yang berlaku khususnya di Semanjung Malaysia. Informasi ini termasuklah
+                    <ul class="list-unstyled">
+                      <li><i class="bi bi-exclamation-circle-fill text-warning me-2"></i>Maklumat mengenai sepsis penyebab kepada algal bahaya</li>
+                      <li><i class="bi bi-exclamation-circle-fill text-warning me-2"></i>Kes- kes kejadian ledakan alga bahaya serta kerugian yang dialami</li>
+                      <li><i class="bi bi-exclamation-circle-fill text-warning me-2"></i>Data-data paremeter oksigen terlarut, pH, suhu dan klorofil secara berkala dari 3 kawasan  pemonitoran iaitu Kuala Kurau (Perak), Sungai Udang dan Sungai Genting (Kelantan).</li>
+                    </ul>
                   </p>
-    
+                  <p>
+                    Selain daripada itu ia juga memberi cadangan kepada penternak mengenai apa yang boleh dilakukan apabila ledakan alga berlaku.Para pelangan juga boleh melaporkan kejadian ledakan alga bahaya di ruang yang disediakan.
+                  </p>   
                   </div>
                 </div>
               </div>
             </div>
           </div>
-        </section><!-- /About Section -->
+        </section><!-- /IIUM Team Intro -->
 
-    <!-- Services 2 Section -->
+    <!-- aktiviti dan penerbitan -->
     <section id="services-2" class="services-2 section dark-background">
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>HABs Monitoring & Solution</h2>
-        <p>Innovative solutions for monitoring, predicting, and mitigating Harmful Algal Blooms (HABs).</p>
-      </div><!-- End Section Title -->
+        <h2>Aktiviti & Penerbitan</h2>
+      </div><!-- /aktiviti dan penerbitan -->
 
       <div class="services-carousel-wrap">
         <div class="container">
@@ -241,33 +254,44 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Real-Time Algal Bloom Monitoring</h2>
+                      <span class="service-item-category">Aktivi</span>
+                      <h2 class="service-item-title">Persampelan Kualiti Air di Perak</h2>
                     </a>
                   </div>
-                  <img src="assets/img/ai-canva/1.png" alt="Image" class="img-fluid">
+                  <img src="hab_assets/sampling1-1.jpg" alt="Image" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">AI-Powered HAB Prediction & Risk Assessment</h2>
+                      <span class="service-item-category">Aktiviti</span>
+                      <h2 class="service-item-title">Persamplean Kualiti Air di Pulau Pinang</h2>
                     </a>
                   </div>
-                  <img src="assets/img/ai-canva/2.png" alt="Image" class="img-fluid">
+                  <img src="hab_assets/sampling2-1.jpg" alt="Image" class="img-fluid">
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="service-item">
+                  <div class="service-item-contents">
+                    <a href="https://ieeexplore.ieee.org/stamp/stamp.jsp?arnumber=10872705">
+                      <span class="service-item-category">Penerbitan</span>
+                      <h2 class="service-item-title">Integrasi IoT untuk Pemantauan Berterusan</h2>
+                    </a>
+                  </div>
+                  <img src="hab_assets/gen_image/gen_im1.png" alt="Image" class="img-fluid">
                 </div>
               </div>
               <div class="swiper-slide">
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Water Quality Data & Analysis</h2>
+                      <span class="service-item-category">Aktiviti</span>
+                      <h2 class="service-item-title">Persamplean Kualiti Air di Pulau Pinang</h2>
                     </a>
                   </div>
-                  <img src="assets/img/ai-canva/3.png" alt="Image" class="img-fluid">
+                  <img src="hab_assets/sampling4-1.jpg" alt="Image" class="img-fluid">
                 </div>
               </div>
 
@@ -275,44 +299,11 @@
                 <div class="service-item">
                   <div class="service-item-contents">
                     <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Early Warning & Notification System</h2>
+                      <span class="service-item-category">Aktiviti</span>
+                      <h2 class="service-item-title">Persampelan Kualiti Air di Kelantan</h2>
                     </a>
                   </div>
-                  <img src="assets/img/ai-canva/4.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Consultation & Advisory Services</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/ai-canva/5.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Research Collaboration & Partnerships</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/ai-canva/6.png" alt="Image" class="img-fluid">
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="service-item">
-                  <div class="service-item-contents">
-                    <a href="#">
-                      <span class="service-item-category">We do</span>
-                      <h2 class="service-item-title">Public Awareness & Education Programs</h2>
-                    </a>
-                  </div>
-                  <img src="assets/img/ai-canva/7.png" alt="Image" class="img-fluid">
+                  <img src="hab_assets/sampling3-1.jpg" alt="Image" class="img-fluid">
                 </div>
               </div>
             </div>
@@ -327,8 +318,8 @@
 
       <!-- Section Title -->
       <div class="container section-title" data-aos="fade-up">
-        <h2>Continue Reading</h2>
-        <p>More Info About HABs</p>
+        <h2>Info Tambahan Berkaitan</h2>
+        <p>Ledakan Alga Berbahaya</p>
       </div><!-- End Section Title -->
 
       <div class="container">
@@ -339,27 +330,27 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/hab_extra1.png" class="img-fluid" alt="">
-                <span class="agency-name">December 12</span>
+                <img src="hab_assets/algae4-2.jpg" class="img-fluid" alt="">
+                <span class="agency-name">Anim Agro Technology</span>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">What is a harmful algal bloom?</h3>
+                <h3 class="post-title">LEDAKAN ALGA MERBAHAYA - APA DIA?</h3>
 
                 <div class="meta d-flex align-items-center">
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">NOAA</span>
+                    <i class="bi bi-person"></i> <span class="ps-2">Blog</span>
                   </div>
                   <span class="px-3 text-black-50">/</span>
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Ocean</span>
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Kesan</span>
                   </div>
                 </div>
 
                 <hr>
 
-                <a href="https://www.noaa.gov/what-is-harmful-algal-bloom" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="https://animhosnan.blogspot.com/2024/02/ledakan-alga-merbahaya-apa-dia.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -370,27 +361,27 @@
             <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="200">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/hab_extra2.png" class="img-fluid" alt="">
-                <span class="agency-name">July 17</span>
+                <img src="hab_assets/algae2-2.jpg" class="img-fluid" alt="">
+                <span class="agency-name">Astro Awani</span>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Harmful Algal Blooms and Your Health</h3>
+                <h3 class="post-title">Ledakan Alga Berbahaya</h3>
 
                 <div class="meta d-flex align-items-center">
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">CDC</span>
+                    <i class="bi bi-person"></i> <span class="ps-2">Berita</span>
                   </div>
                   <span class="px-3 text-black-50">/</span>
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Aquaculture</span>
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Akuakultur</span>
                   </div>
                 </div>
 
                 <hr>
 
-                <a href="https://www.cdc.gov/harmful-algal-blooms/about/index.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="https://www.astroawani.com/topic/alga-berbahaya?title=alga+berbahaya" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -401,27 +392,27 @@
             <div class="post-item position-relative h-100">
 
               <div class="post-img position-relative overflow-hidden">
-                <img src="assets/img/hab_extra3.png" class="img-fluid" alt="">
-                <span class="agency-name">September 05</span>
+                <img src="hab_assets/algae_cell-1.jpg" class="img-fluid" alt="">
+                <span class="agency-name">mStar</span>
               </div>
 
               <div class="post-content d-flex flex-column">
 
-                <h3 class="post-title">Algal Blooms</h3>
+                <h3 class="post-title">Fenomena Ledakan Alga</h3>
 
                 <div class="meta d-flex align-items-center">
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-person"></i> <span class="ps-2">NIH</span>
+                    <i class="bi bi-person"></i> <span class="ps-2">Laman Web</span>
                   </div>
                   <span class="px-3 text-black-50">/</span>
                   <div class="d-flex align-items-center">
-                    <i class="bi bi-folder2"></i> <span class="ps-2">Health</span>
+                    <i class="bi bi-folder2"></i> <span class="ps-2">Fenomena</span>
                   </div>
                 </div>
 
                 <hr>
 
-                <a href="blog-details.html" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+                <a href="https://www.mstar.com.my/lain-lain/rencana/2014/04/08/fenomena-ledakan-alga" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
 
               </div>
 
@@ -441,9 +432,9 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-lg-6">
-              <h3>Got something to share?</h3>
+              <h3>Ingin Kongsikan Sesuatu?</h3>
               <p class="opacity-50">
-                Whether it's feedback, inquiries, or ideas, drop us a message!
+                Sama ada maklum balas, pertanyaan, atau idea, hantarkan mesej kepada kami!
               </p>
             </div>
             <div class="col-lg-6">
@@ -455,7 +446,7 @@
                 <div class="loading">Loading</div>
                 <div class="error-message"></div>
                 <div class="sent-message">
-                  Your message has been sent. Thank you!
+                  Mesej anda telah dihantar. Terima Kasih!
                 </div>
               </form>
             </div>
@@ -477,53 +468,42 @@
               <span class="sitename">MyHABs</span>
             </a>
             <div class="footer-contact pt-3">
-              <p>Centre of Excellence for Cyber Security,</p>
-              <p>Kulliyyah of Information and Communication Technology,</p>
-              <p>International Islamic University Malaysia,</p>
-              <p>53100 Kuala Lumpur, Malaysia</p>
-              <p class="mt-3"><strong>Phone:</strong> <span>+6 0123 45678 90</span></p>
-              <p><strong>Email:</strong> <span>myhabs@iium.my</span></p>
+              <p>Institut Penyelesaian Perikanan,</p>
+              <p>Jalan Batu Maung, 11960 Bayan Lepas,</p>
+              <p>Pulau Pinang, Malaysia</p>
+              <p class="mt-3"><strong>Phone:</strong> <span>+6 04-626 3926</span></p>
+              <p><strong>Email:</strong> <span>myhabs@fri.dof.my</span></p>
+              <p><strong>Website:</strong> <span>https://fri.dof.gov.my</span></p>
             </div>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
             <h4>Useful Links</h4>
             <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Features</a></li>
-              <li><a href="#">Info</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#">Utama</a></li>
+              <li><a href="#">Data FizioKimia</a></li>
+              <li><a href="#">Ramalan</a></li>
+              <li><a href="#">Hubungi</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Real Time IoT Dashboard</h4>
+            <h4>IoT Dashboard & Ramalan</h4>
             <ul>
-              <li><a href="#">IHAB</a></li>
-              <li><a href="#">IHAB B</a></li>
-              <li><a href="#">IHAB C</a></li>
-              <li><a href="#">IHAB D</a></li>
-              <li><a href="#">N-IHAB</a></li>
+              <li><a href="http://20.205.29.217:8080/dashboard/b179af20-9975-11ef-8b78-1f0995d36f0b?publicId=d3601990-86c3-11ef-beb0-6185ac614084">Kuala Kurau, Perak</a></li>
+              <li><a href="http://20.205.29.217:8080/dashboard/0112d1d0-86c3-11ef-beb0-6185ac614084?publicId=d3601990-86c3-11ef-beb0-6185ac614084">Sungai Udang, Pulau Pinang</a></li>
+              <li><a href="http://20.17.160.46:8080/dashboard/ca3bc5d0-3758-11f0-86b5-e3aaf2c891b0?publicId=a3784ad0-3579-11f0-86b5-e3aaf2c891b0">Sungai Geting, Kelantan</a></li>
             </ul>
           </div>
 
           <div class="col-lg-2 col-md-3 footer-links">
-            <h4>HL7 Dashboard</h4>
+            <h4>Agensi Berkait</h4>
             <ul>
-              <li><a href="#">Kuala Kurau</a></li>
-              <li><a href="#">Sungai Udangs</a></li>
-            </ul>
-          </div>
-
-          <div class="col-lg-2 col-md-3 footer-links">
-            <h4>Related Work</h4>
-            <ul>
-              <li><a href="#">MyHABs V1</a></li>
-              <li><a href="#">International Islamic University Malaysia</a></li>
-              <li><a href="#">Department Fisheries</a></li>
-              <li><a href="#">Fisheries Research Institute</a></li>
-              <li><a href="#">Silverseeds Lab Network</a></li>
+              <li><a href="http://myhabs.dof.iolayerz.com/">MyHABs V1</a></li>
+              <li><a href="https://www.iium.edu.my/">International Islamic University Malaysia</a></li>
+              <li><a href="https://fri.dof.gov.my/">Department of Fisheries</a></li>
+              <li><a href="https://www.dof.gov.my/en/">Fisheries Research Institute</a></li>
+              <li><a href="https://silverseedslab.com/">Silverseeds Lab Network</a></li>
             </ul>
           </div>
 
