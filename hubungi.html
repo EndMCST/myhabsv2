@@ -93,160 +93,184 @@
             frameborder="0" 
             allowfullscreen="">
         </iframe>
-    </div><!-- End Google Maps -->
+      </div><!-- End Google Maps -->
 
-    <!-- Team Section -->
-    <section class="team-15 team section" id="team">
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>MyHABs</h2>
-        <h3>Kerjasama Antara</h3>
-      </div><!-- End Section Title -->
+        <!-- Collaborators -->
+        <section class="team-15 team section" id="team">
+            <!-- override css-->
+            <style>
+                /* buang margin section-title sepenuhnya */
+                #team .section-title {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
 
-      <div class="content">
-        <div class="container">
+                /* buang margin default heading dalam section-title */
+                #team .section-title h2,
+                #team .section-title h3 {
+                    margin: 0 !important;
+                    padding: 0 !important;
+                }
 
-          <div class="row justify-content-center">
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/dof_emblem.png" alt="Image" class="img-fluid">
-                  <div class="social">
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>Institut Penyelidikan Perikanan</h3>
+                /* buang padding section team sepenuhnya */
+                #team.team.section {
+                    padding-top: 0 !important;
+                    padding-bottom: 0 !important;
+                }
+
+                #team figure figcaption h4 {
+                    font-size: 1rem;      /* smaller than default h4 (default ~1.5rem) */
+                    text-align: center;   /* center horizontally */
+                    margin-top: 10px;     /* small spacing from image */
+                    color: var(--heading-color); /* optional: match your theme color */
+                }
+            </style>
+
+            <div class="container" data-aos="fade-up">
+                
+                <!-- Section Title -->
+                <div class="section-title">
+                    <h2>MyHABs</h2>
+                    <h3>Kerjasama Antara</h3>
                 </div>
-              </div>
+
+                <!-- Logos -->
+                <div class="row justify-content-center">
+                    
+                    <!-- Logo DOF -->
+                     <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="person">
+                            <figure>
+                            <img src="assets/img/13.png" alt="IIUM" class="img-fluid">
+                            <figcaption>
+                                <h4>Institut Penyelidikan Perikanan</h4>
+                            </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                        <div class="person">
+                            <figure>
+                                <img src="assets/img/14.png" alt="IIUM" class="img-fluid">
+                                <figcaption>
+                                    <h4>Universiti Antarabangsa Malaysia</h4>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+
+                    <!--<div class="col-lg-3 col-md-6 mb-4">
+                    <div class="person">
+                        <figure>
+                        <img src="assets/img/team/dr-anwar2.png" alt="Image" class="img-fluid">
+                        <div class="social">
+                            <a href="#"><span class="bi bi-facebook"></span></a>
+                            <a href="#"><span class="bi bi-twitter-x"></span></a>
+                            <a href="#"><span class="bi bi-linkedin"></span></a>
+                        </div>
+                        </figure>
+                        <div class="person-contents">
+                        <h3>Asst. Prof. Ts. Dr. Ahmad Anwar Zainuddin</h3>
+                        <span class="position">Kulliyyah ICT, IIUM</span>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="person">
+                        <figure>
+                        <img src="assets/img/team/pn-rozi.png" alt="Image" class="img-fluid">
+                        <div class="social">
+                            <a href="#"><span class="bi bi-facebook"></span></a>
+                            <a href="#"><span class="bi bi-twitter-x"></span></a>
+                            <a href="#"><span class="bi bi-linkedin"></span></a>
+                        </div>
+                        </figure>
+                        <div class="person-contents">
+                        <h3>Pn. Roziawati Mohd Razali</h3>
+                        <span class="position">Institut Penyelidikan Perikanan, Batu Maung</span>
+                        </div>
+                    </div>
+                    </div>-->
+                    
+                </div>
             </div>
+        </section><!-- End Collaborators Section -->
+        
+        <div class="container" data-aos="fade">
+            <div class="row gy-5 gx-lg-5">
+                <div class="col-lg-4">
+                    <div class="info">
+                        <h3>Sebarang pertanyaan boleh diajukan kepada:</h3>
+                        <div class="info-item d-flex" style="align-items:center;">
+                            <i class="bi bi-person flex-shrink-0"></i>
+                            <div>
+                                <h4 style="margin:0; line-height:1.4;">Pn. Roziawati Mohd Razali</h4>
+                            </div>
+                        </div>
+                        
+                        <div class="info-item d-flex">
+                            <i class="bi bi-geo-alt flex-shrink-0"></i>
+                            <div>
+                                <h4>Alamat:</h4>
+                                <p>
+                                    Institut Penyelidikan Perikanan,
+                                    Jalan Batu Maung, 11960 Bayan Lepas,  
+                                    Pulau Pinang, Malaysia.
+                                </p>
+                            </div>
+                        </div>
 
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/iium_emblem2.png" alt="Image" class="img-fluid">
-                </figure>
-                <div class="person-contents">
-                  <h3>Universiti Islam Antarabangsa Malaysia</h3>
+                        <div class="info-item d-flex">
+                            <i class="bi bi-envelope flex-shrink-0"></i>
+                            <div>
+                                <h4>Email:</h4>
+                                <p>roziawati@dof.gov.my</p>
+                            </div>
+                        </div>
+
+                        <div class="info-item d-flex">
+                            <i class="bi bi-phone flex-shrink-0"></i>
+                            <div>
+                                <h4>Telefon:</h4>
+                                <p>604-6263926</p>
+                                </div>
+                        </div>
+
+                    </div>
                 </div>
-              </div>
+                
+                <div class="col-lg-8">
+                    <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+                        <div class="row">
+                            <div class="col-md-6 form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required="">
+                            </div>
+                            <div class="col-md-6 form-group mt-3 mt-md-0">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
+                            </div>
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <input type="text" class="form-control" name="subject" id="subject" placeholder="Tajuk" required="">
+                        </div>
+                        
+                        <div class="form-group mt-3">
+                            <textarea class="form-control" name="message" placeholder="Mesej" required=""></textarea>
+                        </div>
+                        
+                        <div class="my-3">
+                            <div class="loading">Memuat..</div>
+                            <div class="error-message"></div>
+                            <div class="sent-message">Mesej anda telah dihantar. Terima kasih!</div>
+                        </div>
+                        
+                        <div class="text-center"><button type="submit">Hantar</button></div>
+                    </form>
+                </div>
             </div>
-
-            <!--<div class="col-lg-3 col-md-6 mb-4">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/dr-anwar2.png" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>Asst. Prof. Ts. Dr. Ahmad Anwar Zainuddin</h3>
-                  <span class="position">Kulliyyah ICT, IIUM</span>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mb-4">
-              <div class="person">
-                <figure>
-                  <img src="assets/img/team/pn-rozi.png" alt="Image" class="img-fluid">
-                  <div class="social">
-                    <a href="#"><span class="bi bi-facebook"></span></a>
-                    <a href="#"><span class="bi bi-twitter-x"></span></a>
-                    <a href="#"><span class="bi bi-linkedin"></span></a>
-                  </div>
-                </figure>
-                <div class="person-contents">
-                  <h3>Pn. Roziawati Mohd Razali</h3>
-                  <span class="position">Institut Penyelidikan Perikanan, Batu Maung</span>
-                </div>
-              </div>
-            </div>-->
-
-          </div>
         </div>
-      </div>
-
-    </section><!-- /Team Section -->
-
-      <div class="container" data-aos="fade">
-
-        <div class="row gy-5 gx-lg-5">
-
-          <div class="col-lg-4">
-
-            <div class="info">
-              <h3>Sebarang pertanyaan boleh diajukan kepada:</h3>
-
-              <div class="info-item d-flex" style="align-items:center;">
-                <i class="bi bi-person flex-shrink-0"></i>
-                <div>
-                  <h4 style="margin:0; line-height:1.4;">Pn. Roziawati Mohd Razali</h4>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-geo-alt flex-shrink-0"></i>
-                <div>
-                  <h4>Alamat:</h4>
-                  <p>
-                    Institut Penyelidikan Perikanan,
-                    Jalan Batu Maung, 11960 Bayan Lepas,  
-                    Pulau Pinang, Malaysia.
-                  </p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-envelope flex-shrink-0"></i>
-                <div>
-                  <h4>Email:</h4>
-                  <p>roziawati@dof.gov.my</p>
-                </div>
-              </div><!-- End Info Item -->
-
-              <div class="info-item d-flex">
-                <i class="bi bi-phone flex-shrink-0"></i>
-                <div>
-                  <h4>Telefon:</h4>
-                  <p>604-6263926</p>
-                </div>
-              </div><!-- End Info Item -->
-
-            </div>
-
-          </div>
-
-          <div class="col-lg-8">
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
-              <div class="row">
-                <div class="col-md-6 form-group">
-                  <input type="text" name="name" class="form-control" id="name" placeholder="Nama" required="">
-                </div>
-                <div class="col-md-6 form-group mt-3 mt-md-0">
-                  <input type="email" class="form-control" name="email" id="email" placeholder="Email" required="">
-                </div>
-              </div>
-              <div class="form-group mt-3">
-                <input type="text" class="form-control" name="subject" id="subject" placeholder="Tajuk" required="">
-              </div>
-              <div class="form-group mt-3">
-                <textarea class="form-control" name="message" placeholder="Mesej" required=""></textarea>
-              </div>
-              <div class="my-3">
-                <div class="loading">Memuat..</div>
-                <div class="error-message"></div>
-                <div class="sent-message">Mesej anda telah dihantar. Terima kasih!</div>
-              </div>
-              <div class="text-center"><button type="submit">Hantar</button></div>
-            </form>
-          </div><!-- End Contact Form -->
-
-        </div>
-
-      </div>
 
     </section><!-- /Contact Section -->
   </main>
