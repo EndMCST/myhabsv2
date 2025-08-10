@@ -4,13 +4,13 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>HABs v2</title>
+  <title>MyHABs</title>
   <meta name="description" content="">
   <meta name="keywords" content="">
 
   <!-- Icons -->
-  <link href="assets/img/iium_emblem.png" rel="icon">
-  <link href="assets/img/iium_emblem.png" rel="apple-touch-icon">
+  <link href="hab_assets/habs_logo3.png" rel="icon">
+  <link href="hab_assets/habs_logo3.png" rel="apple-touch-icon">
 
   <!-- Fonts -->
   <link href="https://fonts.googleapis.com" rel="preconnect">
@@ -225,76 +225,14 @@
 <!--Laporan LAB di Malaysia -->
 <button class="accordion">Laporan LAB di Malaysia</button>
 <div class="panel">
+
+  <!-- Peta -->
   <h2 style="margin-top:30px; color:#1e88e5; text-align:center;">
-    Rumusan Laporan LAB di Malaysia
+    Peta Kejadian HAB di Malaysia
   </h2>
-
-  <div style="max-width:1100px; margin:20px auto; line-height:1.6;">
-  <!-- Perak & Pulau Pinang -->
-  <div style="margin-bottom:5px;">
-    <h4 style="margin:0; font-size:20px;">Perak & Pulau Pinang</h4>
-    <p><strong>Tahun:</strong> 2020, 2021</p>
-    <p><strong>Spesies:</strong> <i>Margalefidinium fulvescens, Noctiluca scintillans, Tripos furca</i></p>
-    <p><strong>Kesan:</strong></p>
-      <ul>
-        <li><strong>2020:</strong> 57 sangkar ikan terjejas di Kuala Kurau, 418 tan ikan mati; merebak ke Pulau Pinang.</li>
-        <li><strong>2021:</strong> Ledakan <i>Noctiluca scintillans</i> di Sungai Udang, tiada kematian ikan.</li>
-      </ul>   
+  <div style="max-width:1100px; margin:20px auto;">
+    <iframe id="habMapFrame" width="100%" height="600" style="border:none;"></iframe> 
   </div>
-
-  <!-- Melaka -->
-  <div style="margin-bottom:5px;">
-    <h4 style="margin:0; font-size:20px;">Melaka</h4>
-    <p><strong>Tahun:</strong> 1991, Jun 2024</p>
-    <p><strong>Spesies:</strong> <i>Alexandrium tamiyavanichii</i></p>
-    <p><strong>Kesan:</strong></p>
-      <ul>
-        <li><strong>1991:</strong> Keracunan PSP, 3 orang dimasukkan ke hospital.</li>
-        <li><strong>2024:</strong> Kes PSP terbaru akibat kupang tercemar, seorang mangsa ke hospital; larangan pengutipan kupang dikeluarkan.</li>
-      </ul>
-  </div>
-
-  <!-- Kelantan -->
-  <div style="margin-bottom:5px;">
-    <h4 style="margin:0; font-size:20px;">Kelantan</h4>
-    <p><strong>Lokasi:</strong> Sg, Geting, Tumpat</p>
-    <p><strong>Tahun:</strong> 2001, 2015, 2020, 2021</p>
-    <p><strong>Spesies:</strong> <i>Alexandrium minutum</i></p>
-    <p><strong>Kesan:</strong> Beberapa kejadian keracunan PSP; ramai dimasukkan ke hospital dan 1 kematian direkodkan.</p>
-  </div>
-
-  <!-- Johor -->
-  <div style="margin-bottom:5px;">
-    <h4 style="margin:0; font-size:20px;">Johor</h4>
-    <p><strong>Lokasi:</strong> Selat Tebrau</p>
-    <p><strong>Tahun:</strong> 2001, 2014</p>
-    <p><strong>Spesies:</strong> <i>Prorocentrum minimum</i>, <i>Karlodinium australe</i></p>
-    <p><strong>Kesan:</strong>
-      <ul>
-        <li><strong>2001:</strong> Tiada kematian ikan.</li>
-        <li><strong>2014:</strong> Kematian ikan sangkar akibat ledakan <i>Karlodinium australe</i>.</li>
-      </ul>
-  </div>
-
-  <!-- Pahang -->
-  <div style="margin-bottom:5px;">
-    <h4 style="margin:0; font-size:20px;">Kuantan</h4>
-    <p><strong>Lokasi:</strong> Kuantan</p>
-    <p><strong>Tahun:</strong> 2013</p>
-    <p><strong>Spesies:</strong> <i>Alexandrium tamiyavanichii</i></p>
-    <p><strong>Kesan:</strong> 10 orang dimasukkan ke hospital akibat keracunan PSP.</p>
-  </div>
-
-  <!-- Negeri Sembilan -->
-  <div style="margin-bottom:5px;">
-    <h4 style="margin:0; font-size:20px;">Negeri Sembilan</h4>
-    <p><strong>Lokasi:</strong> Port Dickson</p>
-    <p><strong>Tahun:</strong> April 2024</p>
-    <p><strong>Spesies:</strong> <i>Alexandrium minutum</i></p>
-    <p><strong>Kesan:</strong> 8 orang dimasukkan ke hospital akibat keracunan PSP selepas memakan kupang tercemar.</p>
-  </div>
-
-</div>
   
   <!-- LAB di Perak & Pulau Pinang -->
   <button class="accordion">Perak & Pulau Pinang</button>
@@ -364,6 +302,77 @@
       kerana mengalami sindrom keracunan paralitik akibat memakan kupang yang tercemar dengan saxitoxin. Spesies yang bertanggungjawab 
       dikenal pasti sebagai <i>Alexandrium minutum</i>.
     </p>
+  </div>
+
+  <button class="accordion">Rumusan Laporan LAB di Malaysia</button>
+  <div class="panel">
+    <div style="max-width:1100px; margin:20px auto; line-height:1.6;">
+
+      <!-- Perak & Pulau Pinang -->
+      <div style="margin-bottom:5px;">
+        <h4 style="margin:0; font-size:20px;">Perak & Pulau Pinang</h4>
+        <p><strong>Tahun:</strong> 2020, 2021</p>
+        <p><strong>Spesies:</strong> <i>Margalefidinium fulvescens, Noctiluca scintillans, Tripos furca</i></p>
+        <p><strong>Kesan:</strong></p>
+          <ul>
+            <li><strong>2020:</strong> 57 sangkar ikan terjejas di Kuala Kurau, 418 tan ikan mati; merebak ke Pulau Pinang.</li>
+            <li><strong>2021:</strong> Ledakan <i>Noctiluca scintillans</i> di Sungai Udang, tiada kematian ikan.</li>
+          </ul>   
+      </div>
+
+      <!-- Melaka -->
+      <div style="margin-bottom:5px;">
+        <h4 style="margin:0; font-size:20px;">Melaka</h4>
+        <p><strong>Tahun:</strong> 1991, Jun 2024</p>
+        <p><strong>Spesies:</strong> <i>Alexandrium tamiyavanichii</i></p>
+        <p><strong>Kesan:</strong></p>
+          <ul>
+            <li><strong>1991:</strong> Keracunan PSP, 3 orang dimasukkan ke hospital.</li>
+            <li><strong>2024:</strong> Kes PSP terbaru akibat kupang tercemar, seorang mangsa ke hospital; larangan pengutipan kupang dikeluarkan.</li>
+          </ul>
+      </div>
+
+      <!-- Kelantan -->
+      <div style="margin-bottom:5px;">
+        <h4 style="margin:0; font-size:20px;">Kelantan</h4>
+        <p><strong>Lokasi:</strong> Sg, Geting, Tumpat</p>
+        <p><strong>Tahun:</strong> 2001, 2015, 2020, 2021</p>
+        <p><strong>Spesies:</strong> <i>Alexandrium minutum</i></p>
+        <p><strong>Kesan:</strong> Beberapa kejadian keracunan PSP; ramai dimasukkan ke hospital dan 1 kematian direkodkan.</p>
+      </div>
+
+      <!-- Johor -->
+      <div style="margin-bottom:5px;">
+        <h4 style="margin:0; font-size:20px;">Johor</h4>
+        <p><strong>Lokasi:</strong> Selat Tebrau</p>
+        <p><strong>Tahun:</strong> 2001, 2014</p>
+        <p><strong>Spesies:</strong> <i>Prorocentrum minimum</i>, <i>Karlodinium australe</i></p>
+        <p><strong>Kesan:</strong>
+          <ul>
+            <li><strong>2001:</strong> Tiada kematian ikan.</li>
+            <li><strong>2014:</strong> Kematian ikan sangkar akibat ledakan <i>Karlodinium australe</i>.</li>
+          </ul>
+      </div>
+
+      <!-- Pahang -->
+      <div style="margin-bottom:5px;">
+        <h4 style="margin:0; font-size:20px;">Kuantan</h4>
+        <p><strong>Lokasi:</strong> Kuantan</p>
+        <p><strong>Tahun:</strong> 2013</p>
+        <p><strong>Spesies:</strong> <i>Alexandrium tamiyavanichii</i></p>
+        <p><strong>Kesan:</strong> 10 orang dimasukkan ke hospital akibat keracunan PSP.</p>
+      </div>
+
+      <!-- Negeri Sembilan -->
+      <div style="margin-bottom:5px;">
+        <h4 style="margin:0; font-size:20px;">Negeri Sembilan</h4>
+        <p><strong>Lokasi:</strong> Port Dickson</p>
+        <p><strong>Tahun:</strong> April 2024</p>
+        <p><strong>Spesies:</strong> <i>Alexandrium minutum</i></p>
+        <p><strong>Kesan:</strong> 8 orang dimasukkan ke hospital akibat keracunan PSP selepas memakan kupang tercemar.</p>
+      </div>
+
+    </div>
   </div>
 
 </div>
@@ -620,10 +629,8 @@
           <div class="col-lg-3 col-md-3 footer-links">
             <h4>Agensi Berkait</h4>
             <ul>
-              <li><a href="http://myhabs.dof.iolayerz.com/">MyHABs V1</a></li>
-              <li><a href="https://www.iium.edu.my/">International Islamic University Malaysia</a></li>
-              <li><a href="https://fri.dof.gov.my/">Department of Fisheries</a></li>
-              <li><a href="https://www.dof.gov.my/en/">Fisheries Research Institute</a></li>
+              <li><a href="https://www.iium.edu.my/">Universiti Islam Antarabangsa Malaysia</a></li>
+              <li><a href="https://fri.dof.gov.my/">Institut Penyelidikan Perikanan Malaysia</a></li>
             </ul>
           </div>
 
@@ -670,6 +677,21 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.querySelectorAll(".accordion").forEach(function(btn) {
+        btn.addEventListener("click", function() {
+            var panel = this.nextElementSibling;
+
+            // Check kalau panel ni mengandungi peta
+            var iframe = panel.querySelector("#habMapFrame");
+            if (iframe && !iframe.src) {
+                // Hanya load sekali sahaja bila pertama kali buka
+                iframe.src = "map/map.html";
+            }
+        });
+    });
+  </script>
 
 </body>
 
